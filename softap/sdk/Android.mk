@@ -14,8 +14,6 @@ LOCAL_VENDOR_MODULE := true
 
 LOCAL_CFLAGS += -DSDK_VERSION=\"0.0.1.0\"
 
-LOCAL_USE_VNDK := true
-
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/qsap_api.h \
                                $(LOCAL_PATH)/qsap.h
 
@@ -63,8 +61,6 @@ LOCAL_CFLAGS += -Wall -Wextra -Werror
 
 LOCAL_SRC_FILES := qsap_api.c \
                    qsap.c
-
-LOCAL_PRELINK_MODULE := false
 
 LOCAL_SHARED_LIBRARIES := libnetutils libutils libbinder libcutils libhardware_legacy libnl liblog
 
